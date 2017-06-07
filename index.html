@@ -2,10 +2,9 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Ryan Hodin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+  <title>A Pen by  Ryan "Walker" Chilton</title>
+  
+  
   
       <link rel="stylesheet" href="css/style.css">
 
@@ -16,23 +15,20 @@
   <div id = "mainpage">
   <ul class="navbar navbar-default navbar-fixed-top">
     349 Project: Youtuber Success
-    <li><a href="#Conclusion">Conclusion</a></li><li><a href="#Report">Report</a></li><li><a href="#Summary">Summary</a></li>
+    <li><a href="#figures">Figures</a></li><li><a href="#Report">Report</a></li><li><a href="#summary">Summary</a></li>
   </ul>
   <div id ="Title"><div id="name">Youtuber Success Factors</div><div id = "description">What factors lead to a successful Youtube channel?</div>
     <div id ="members">Alan Wojciechowski, Ryan Chilton, Ryan Hodin</div>
-    <div id ="course">EECS 349 at Northwestern University</div>
+    <div id ="course">EECS 349 at Northwestern University</div><div id="contact">Contact: Alanwojciechowski2017@u.northwestern.edu</div>
   </div>
-  <div id ="Summary">
-    <a name="Summary"></a>
-    <div id="SummaryTitle">Summary</div>
-    <div id ="SummaryBody">Our goal is to determine what lesser considered factors lead to a successful Youtube channel. With the rise of the Youtube Celebrity, there is merit in determining what separates the obscure channels from the ones with tens of millions of subscribers. In particular, we have examined the success of Let's Play channels, in a way that can be easily repeated with other genres. This allowed us to focus less on the qualitative attributes of the channels and focus on purely quantitative data types. We created a program to scrape data from Youtube's API, then formatted that data and fed it into Weka.
-    Our success attribute was based on subscriber counts of at least 250,000. We originally focused on million subscriber channels, but the successes were so few as to lead to a constant zeroR success.</div>
+  <div id ="Summary"><a name="summary"></a><div id="SummaryTitle">Summary</div><div id ="SummaryBody">Our goal is to determine what quantitative factors lead to a successful Youtube channel. With the rise of the Youtube Celebrity, there is merit in determining what separates the obscure channels from the ones with tens of millions of subscribers. With the potential to make money off increased subscriber count, the factors that lead to popularity are extremely important for starting channels. In particular, we examined the success of Let's Play channels, a genre of gaming videos that involve a mixture of walkthroughs, commentaries, and reviews of different games. We created a program in python to collect quantitative data from Youtube's API and another program to format it so we could run it through Weka.
+    Our target function initially deemed a channel a success if it has over one million subscribers. Using attributes such as video count, hidden subscriber count, average video duration, average video title length, average video description length, average posting time, sd/hd ratio, and caption ratio, we found no meaningful model that performed better than ZeroR. The key result we found was that J48 split on caption ratio twice, giving an accuracy of 93.55%, which was still lower than ZeroR at 95.16%. Channels with caption ratio greater than 0.0 and then greater than 0.13 were labeled a success. We later relaxed our target function to consider a channel a success if it had over 250,000 subscribers and ended up with similar results. 
+</div>
   </div>
-  <div id ="Conclusion">WITH
-    <a name="Conclusion"></a>
+  <div id ="Report"><a name="Report"></a><a href="https://za419.github.io/youtube-success-predictor/ML-Report.pdf">Click here to download our report</a>
   </div>
-    <a name="Report"></a>
-  <div id ="Contacts">REPORT
+  <div id ="Figures"><a name="figures"></a><div id="FiguresTitle">Figures</div><img src="https://raw.githubusercontent.com/za419/youtube-success-predictor/master/Figure%205.jpg" alt="Figure 1, Relevant Attributes">
+    <div>Figure 1: The relevant attributes in our data source. Red represents successful channels, while blue represents unsuccessful ones.</div>
   </div>
 </div>
   

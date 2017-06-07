@@ -27,7 +27,7 @@ li{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 li a{
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   
@@ -78,7 +78,7 @@ li a:hover {
   text-align: center;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-a {
+a.standalone {
   margin:auto;
   
   width: 30%;

@@ -30,18 +30,18 @@ li a{
   display: inline-block;
   color: white;
   text-align: center;
-  
+
   padding-left: 10px;
   padding-right: 10px;
-  
+
   text-decoration: none;
-  
+
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 li a:hover {
-  background-color: #990f14; 
-  
+  background-color: #990f14;
+
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -89,7 +89,7 @@ li a:hover {
 }
 a.standalone {
   margin:auto;
-  
+
   width: 30%;
   font-size: 25px;
   color: White;
@@ -100,14 +100,14 @@ a.standalone {
     display: block;
   color: white;
   text-align: center;
-  
+
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  
+
   text-decoration: none;
 }
  a.standalone:hover {
-  background-color: #b31217; 
+  background-color: #b31217;
 }
 #Figures{
   Width: 100%;

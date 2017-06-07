@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <title>Northwestern University EECS 349 Final Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
   <!-- Favicons -->
   <link rel="icon" href="icons/small.png" sizes="16x16" type="image/png">
   <link rel="icon" href="icons/medium.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">
   <link rel="icon" href="favicon.ico" sizes="72x72"> <!-- Omit type attribute for compatibility with certain browsers -->
   <link rel="icon" href="icons/large.png" sizes="128x128 256x256 286x286">
   <link rel="icon" href="icons/fullsize.png" sizes="512x512 542x542" type="image/png">
-  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  
-  
-  
+
+
+
       <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     <div id="contact"><a href="mailto:Alanwojciechowski2017@u.northwestern.edu?subject=Youtuber%20Success%20Project%20(Northwestern%20EECS%20349%20Final%20Project)" class="standalone">Contact Us</a></div>
   </div>
   <div id ="Summary"><a name="summary"></a><div id="SummaryTitle">Summary</div><div id ="SummaryBody">Our goal is to determine what quantitative factors lead to a successful Youtube channel. With the rise of the Youtube Celebrity, there is merit in determining what separates the obscure channels from the ones with tens of millions of subscribers. With the potential to make money off increased subscriber count, the factors that lead to popularity are extremely important for starting channels. In particular, we examined the success of Let's Play channels, a genre of gaming videos that involve a mixture of walkthroughs, commentaries, and reviews of different games. We created a program in python to collect quantitative data from Youtube's API and another program to format it so we could run it through Weka.
-    Our target function initially deemed a channel a success if it has over one million subscribers. Using attributes such as video count, hidden subscriber count, average video duration, average video title length, average video description length, average posting time, sd/hd ratio, and caption ratio, we found no meaningful model that performed better than ZeroR. The key result we found was that J48 split on caption ratio twice, giving an accuracy of 93.55%, which was still lower than ZeroR at 95.16%. Channels with caption ratio greater than 0.0 and then greater than 0.13 were labeled a success. We later relaxed our target function to consider a channel a success if it had over 250,000 subscribers and ended up with similar results. 
+    Our target function initially deemed a channel a success if it has over one million subscribers. Using attributes such as video count, hidden subscriber count, average video duration, average video title length, average video description length, average posting time, sd/hd ratio, and caption ratio, we found no meaningful model that performed better than ZeroR. The key result we found was that J48 split on caption ratio twice, giving an accuracy of 93.55%, which was still lower than ZeroR at 95.16%. Channels with caption ratio greater than 0.0 and then greater than 0.13 were labeled a success. We later relaxed our target function to consider a channel a success if it had over 250,000 subscribers and ended up with similar results.
 </div>
   </div>
   <div id ="Report"><a name="Report"></a><a href="https://za419.github.io/youtube-success-predictor/Final_Report.pdf" class="standalone">Click here to download our report</a>
@@ -42,7 +42,7 @@
     <div>Figure 1: The relevant attributes in our data source. Red represents successful channels, while blue represents unsuccessful ones.</div>
   </div>
 </div>
-  
-  
+
+
 </body>
 </html>

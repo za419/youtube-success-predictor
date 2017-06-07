@@ -101,9 +101,12 @@ a.standalone {
   color: white;
   text-align: center;
   
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  
   text-decoration: none;
 }
- a:hover {
+ a.standalone:hover {
   background-color: #b31217; 
 }
 #Figures{
